@@ -554,30 +554,44 @@
       color: var(--accent);
     }
 
-    /* WebUtils 계산기 링크 */
+    /* WebUtils P-08 */
+    .product.utils-product {
+      grid-template-columns: 120px 1fr;
+    }
+
+    .utils-full { }
+
+    .utils-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 8px;
+    }
+
     .utils-links {
-      margin-top: 12px;
+      margin-top: 16px;
       display: flex;
       flex-wrap: wrap;
-      gap: 6px;
+      gap: 8px;
     }
 
     .utils-links a {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--accent-soft);
-      padding: 3px 10px;
+      font-family: var(--font-kr);
+      font-size: 13px;
+      letter-spacing: -0.01em;
+      color: var(--ink-soft);
+      padding: 7px 16px;
       border: 1px solid var(--hairline);
-      border-radius: 100px;
-      transition: border-color 0.2s, color 0.2s;
+      border-radius: 6px;
+      transition: border-color 0.2s, color 0.2s, background 0.2s;
       text-decoration: none;
     }
 
     .utils-links a:hover {
       border-color: var(--accent-soft);
       color: var(--accent);
+      background: var(--paper-deep);
     }
 
     /* ────── ARTICLES ────── */
@@ -823,6 +837,7 @@
         gap: 16px;
         padding: 28px 0;
       }
+      .product.utils-product { grid-template-columns: 1fr; }
       .product.clickable:hover { padding-left: 0; }
       .product.clickable::after { display: none; }
       .product-status { text-align: left; align-items: flex-start; padding-top: 0; }
@@ -1056,14 +1071,21 @@
       </div>
     </div>
 
-    <div class="product reveal reveal-delay-3">
+    <div class="product utils-product reveal reveal-delay-3">
       <div class="product-index">P—08</div>
-      <h3 class="product-name">
-        웹유틸
-        <span class="en">WebUtils · utils.minon.kr</span>
-      </h3>
-      <p class="product-desc">
-        한국형 롱테일 계산기·변환기 모음. 취득세·주휴수당·청약가점 등 실생활에서 자주 마주치는 복잡한 계산을 빠르게 처리합니다. 현재 20종 이상의 계산기를 무료로 제공합니다.
+      <div class="utils-full">
+        <div class="utils-header">
+          <h3 class="product-name">
+            웹유틸
+            <span class="en">WebUtils · utils.minon.kr</span>
+          </h3>
+          <span class="status-live" style="white-space:nowrap;">
+            <a href="https://utils.minon.kr" target="_blank" rel="noopener" style="color:inherit; text-decoration:none;">Live ↗</a>
+          </span>
+        </div>
+        <p class="product-desc" style="max-width:none;">
+          한국형 롱테일 계산기·변환기 모음. 취득세·주휴수당·청약가점 등 실생활에서 자주 마주치는 복잡한 계산을 빠르게 처리합니다. 20종+ 무료 제공.
+        </p>
         <div class="utils-links">
           <a href="https://utils.minon.kr/acquisition-tax-calculator/" target="_blank" rel="noopener">취득세 계산기</a>
           <a href="https://utils.minon.kr/weekly-holiday-pay-calculator/" target="_blank" rel="noopener">주휴수당 계산기</a>
@@ -1074,12 +1096,6 @@
           <a href="https://utils.minon.kr/funeral-condolence-calculator/" target="_blank" rel="noopener">장례·부조금 계산기</a>
           <a href="https://utils.minon.kr/national-housing-bond-calculator/" target="_blank" rel="noopener">국민주택채권 계산기</a>
         </div>
-        <br>
-        <span class="tag">Web · Tools · 20종+</span>
-      </p>
-      <div class="product-status">
-        <span class="status-live">Live</span>
-        <a href="https://utils.minon.kr" target="_blank" rel="noopener" class="product-arrow">Visit site ↗</a>
       </div>
     </div>
   </div>
